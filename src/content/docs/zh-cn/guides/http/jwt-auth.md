@@ -118,9 +118,9 @@ func (l *GetProfileLogic) GetProfile(req *types.ProfileReq) (*types.ProfileResp,
 }
 ```
 
-## Token 吐销
+## Token 注销
 
-利用 Redis 维护黑名单，实现登出 / Token 吹销：
+利用 Redis 维护黑名单，实现登出 / Token 注销：
 
 ```go
 func (l *LogoutLogic) Logout(req *types.LogoutReq) error {
